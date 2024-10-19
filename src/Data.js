@@ -1,3 +1,6 @@
+import { MdAttachMoney } from "react-icons/md";
+import { IoTimerOutline } from "react-icons/io5";
+import { MdLocalAtm } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 
 import sirrea2 from "./photos/sirrea2.JPG";
@@ -17,17 +20,17 @@ import abigale from "./photos/abigaleBoudoir.jpg";
 import cassidy from "./photos/cassidy.JPG";
 import karinaP2 from "./photos/KarinaP2.JPG";
 import karina from "./photos/karina.JPG";
-import jasline from "./photos/jasline.jpg";
+// import jasline from "./photos/jasline.jpg";
 import nashalae from "./photos/nashalae.JPG";
 import lizz from "./photos/liz.JPG";
 import lizz2 from "./photos/liz2.JPG";
-import brittney from "./photos/brittney.JPG";
+// import brittney from "./photos/brittney.JPG";
 import edny from "./photos/edny.JPG";
 import edward from "./photos/edward.JPG";
 import devonte from "./photos/devonte2.JPG";
 import cesar from "./photos/cesar.JPG";
 import nacier from "./photos/nacier.JPG";
-import jordan from "./photos/jordan.JPG";
+// import jordan from "./photos/jordan.JPG";
 import jorden from "./photos/jorden.JPG";
 import caston from "./photos/caston.JPG";
 
@@ -174,11 +177,11 @@ export const photoshoots = [
       views: "0"
     },
 
-    {
-      name: "Jasline",
-      photo: jasline,
-      views: "0"
-    },
+    // {
+    //   name: "Jasline",
+    //   photo: jasline,
+    //   views: "0"
+    // },
 
     {
       name: "Nashalae",
@@ -207,11 +210,11 @@ export const photoshoots = [
     </a>,
     },
 
-    {
-      name: "Brittney",
-      photo: brittney,
-      views: "0"
-    },
+    // {
+    //   name: "Brittney",
+    //   photo: brittney,
+    //   views: "0"
+    // },
 
     {
       name: "Edny",
@@ -256,14 +259,14 @@ export const photoshoots = [
     </a>,
     },
 
-    {
-      name: "Jordan",
-      photo: jordan,
-      views: "0",
-      social: <a href="https://www.instagram.com/mr_theatrics">
-      <AiFillInstagram />
-    </a>,
-    },
+    // {
+    //   name: "Jordan",
+    //   photo: jordan,
+    //   views: "0",
+    //   social: <a href="https://www.instagram.com/mr_theatrics">
+    //   <AiFillInstagram />
+    // </a>,
+    // },
 
     {
       name: "Jorden",
@@ -282,4 +285,35 @@ export const photoshoots = [
       <AiFillInstagram />
     </a>,
     }
+]
+
+export const prices = [
+  {
+    id: 1,
+    icon: <MdAttachMoney />,
+    title: "Prices",
+    text: "Studio (1 Person): $200+",
+    text2: "Studio (2 People): $350+",
+    text3: "Studio (Groups over 3+): $500+",
+    text4: "Outdoor (1 Person): $150",
+    text5: "Outdoor (2 People): $200",
+    text6: "Outdoor (Groups over 3+): $400+",
+  },
+];
+
+export const requirements = [  
+  
+  {
+    id: 1,
+    icon: <IoTimerOutline />,
+    text: "Time Management",
+    amount: "Photoshoots are a minimum of 2hrs",
+    tab: "PLEASE BE ON TIME!",
+  },
+  {
+    id: 2,
+    icon: <MdLocalAtm />,
+    text: "Deposit",
+    amount: "50% or Full payment with Zelle",
+  }
 ]

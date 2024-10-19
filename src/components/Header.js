@@ -3,10 +3,10 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Transitions";
 import {
-  AiFillTwitterCircle,
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="mb-6 text-[30px] lg:text-[40px] font-semibold py-4"
+            className="text-[30px] lg:text-[40px] font-semibold py-4"
           >
             <span className="text-white mr-2">I am a</span>
             <TypeAnimation
@@ -41,16 +41,12 @@ const Header = () => {
               </a>
 
               <a href="https://twitter.com/DelvnReyes">
-                <AiFillTwitterCircle />
+              <FaXTwitter />
               </a>
 
               <a href="https://www.linkedin.com/in/delvinreyes/">
                 <AiFillLinkedin />
               </a>
-            </div>
-
-            <div className="flex items-center justify-center font-bold text-xl mb-2 text-white">
-              Photos by Delvin Reyes
             </div>
           </motion.div>
           <motion.p
@@ -58,14 +54,14 @@ const Header = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="mb-8 max-w-lg mx-auto lg:mx-0"
+            className=" max-w-lg mx-auto lg:mx-0"
           ></motion.p>
           <motion.div
             variants={fadeIn("up", 0.8)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+            className="flex max-w-max gap-x-6 items-center mx-auto lg:mx-0"
           ></motion.div>
           <motion.div
             variants={fadeIn("up", 0.3)}

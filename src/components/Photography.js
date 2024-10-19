@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Photography = ({ image }) => {
     
 
@@ -13,22 +12,18 @@ const Photography = ({ image }) => {
             <strong className="px-1 text-white">
               {image.name}
             </strong>
-            
           </li>
+          
           <li>
             <strong className="px-1 text-white">
-            Views:
+            Views: {image.views}
             </strong>
-            {image.views}
-        
           </li>
 
           <li>
             <strong className="px-1 text-lg text-white">
             {image.social} 
             </strong>
-            
-        
           </li>
         </ul>
         </div>
