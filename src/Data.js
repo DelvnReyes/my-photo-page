@@ -84,7 +84,6 @@ export const photoshoots = [
     </a>,
     },
   
-  
     {
       name: "Tessa",
       photo: tessa,
