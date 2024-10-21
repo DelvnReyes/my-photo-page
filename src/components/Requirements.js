@@ -19,7 +19,7 @@ const Requirements = () => {
               className="text-center border border-solid border-grey p-8 rounded-md"
               key={requirement.id}
             >
-              <div className="flex justify-center mb-4 text-[1.5rem]">
+              <div className="flex justify-center mb-2 text-[1.5rem]">
                 {requirement.icon}
               </div>
               <div className="mb-4 text-xl font-bold">{requirement.text}</div>
