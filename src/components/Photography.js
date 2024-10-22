@@ -6,19 +6,16 @@ const Photography = ({ image, onClick }) => {
     <div className="max-w-sm rounded overflow-hidden cursor-pointer" onClick={onClick}>
       <img src={image.photo} alt="photoshoots" className="w-full"></img>
       <div className="px-6 py-2">
-        {/* <ul>
-          <li>
+        <ul>
+          <li className="flex">
+            <strong className="px-1 text-lg text-white">{image.social}</strong>
             <strong className="px-1 text-white">{image.name}</strong>
           </li>
 
-          <li>
+          {/* <li>
             <strong className="px-1 text-white">Views: {image.views}</strong>
-          </li>
-
-          <li>
-            <strong className="px-1 text-lg text-white">{image.social}</strong>
-          </li>
-        </ul> */}
+          </li> */}
+        </ul>
       </div>
     </div>
   );

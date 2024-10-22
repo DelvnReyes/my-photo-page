@@ -111,10 +111,10 @@ const App = () => {
 
             {/* Display image name and views */}
             <div className="text-center mt-4">
-              <h2 className="text-white text-2xl font-semibold flex justify-center items-center">
+              {/* <h2 className="text-white text-2xl font-semibold flex justify-center items-center">
                 {pics[selectedPic].social}
-                {pics[selectedPic].name} {/* Image name */}
-              </h2>
+                {pics[selectedPic].name}
+              </h2> */}
               <p className="text-white">Views: {pics[selectedPic].views}</p>{" "}
               {/* Image views */}
             </div>
