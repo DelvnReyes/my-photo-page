@@ -22,10 +22,10 @@ const App = () => {
   useEffect(() => {
     if (selectedPic !== null) {
       // Disable scrolling when modal is open
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
       // Re-enable scrolling when modal is closed
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
   }, [selectedPic]);
 
@@ -120,15 +120,12 @@ const App = () => {
             />
 
             {/* Display image name and views */}
-            <div className="text-center mt-4">
-              <h2 className="text-white text-2xl font-semibold flex justify-center items-center">
+            <div className="text-center mt-4 flex justify-center items-center">
+              <h2 className="text-white text-3xl font-semibold flex justify-center items-center">
                 {pics[selectedPic].social}
-                {pics[selectedPic].name}
               </h2>
-              <p className="text-white">Views: {pics[selectedPic].views}</p>{" "}
-              {/* Image views */}
+              <p className="text-white text-2xl">{pics[selectedPic].name} </p>
             </div>
-
           </div>
         </div>
       )}

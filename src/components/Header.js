@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Transitions";
 import {
-  AiFillInstagram,
+  // AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
@@ -36,9 +36,9 @@ const Header = () => {
               repeat={Infinity}
             />
             <div className="flex items-center justify-center text-white">
-              <a href="https://www.instagram.com/ScvpeGoat">
+              {/* <a href="https://www.instagram.com/ScvpeGoat">
                 <AiFillInstagram />
-              </a>
+              </a> */}
 
               <a href="https://twitter.com/DelvnReyes">
               <FaXTwitter />

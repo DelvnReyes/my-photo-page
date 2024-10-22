@@ -12,9 +12,6 @@ const Photography = ({ image, onClick }) => {
             <h2 className="px-1 text-white">{image.name}</h2>
           </li> */}
 
-          {/* <li>
-            <strong className="px-1 text-white">Views: {image.views}</strong>
-          </li> */}
         </ul>
       </div>
     </div>

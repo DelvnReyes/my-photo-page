@@ -3,288 +3,300 @@ import { IoTimerOutline } from "react-icons/io5";
 import { MdLocalAtm } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 
+import jace from "./photos/jace.jpg";
+import jaylen from "./photos/jaylen.JPG";
 import sirrea2 from "./photos/sirrea2.JPG";
-import sirrea from "./photos/sirrea1.JPG";
+import sirrea from "./photos/sirrea3.JPG";
+import sirrea4 from "./photos/sirrea4.JPG";
 import rachely from "./photos/rachely.JPG";
 import rachely2 from "./photos/rachely2.JPG";
+import rachely3 from "./photos/rachely3.JPG";
 import niah from "./photos/niah.jpg";
 import shoniah2 from "./photos/shoniah2.JPG";
-import tessa from "./photos/tessa.JPG";
-import tessa2 from "./photos/tessa2.JPG";
+import abigale from "./photos/abigaleBoudoir.jpg";
 import zianna2 from "./photos/zianna2.JPG";
 import zianna from "./photos/zianna.JPG";
-import karen from "./photos/karen.JPG";
-import zenobia from "./photos/zenobia.JPG";
-import zenobia2 from "./photos/zenobia2.jpg";
-import abigale from "./photos/abigaleBoudoir.jpg";
+import zianna3 from "./photos/zianna3.JPEG";
+import tessa from "./photos/tessa.JPG";
+import tessa2 from "./photos/tessa2.JPG";
 import cassidy from "./photos/cassidy.JPG";
 import karinaP2 from "./photos/KarinaP2.JPG";
 import karina from "./photos/karina.JPG";
-// import jasline from "./photos/jasline.jpg";
+import karinaP from "./photos/KarinaP.JPG";
+import karen from "./photos/karen.JPG";
+import karen2 from "./photos/karen2.JPG";
+import zenobia from "./photos/zenobia.JPG";
+import zenobia2 from "./photos/zenobia2.jpg";
+import zenobia3 from "./photos/zenobia3.JPG";
+import gavin from "./photos/gavin.JPG";
 import nashalae from "./photos/nashalae.JPG";
 import lizz from "./photos/liz.JPG";
 import lizz2 from "./photos/liz2.JPG";
-// import brittney from "./photos/brittney.JPG";
 import edny from "./photos/edny.JPG";
 import edward from "./photos/edward.JPG";
 import devonte from "./photos/devonte2.JPG";
 import cesar from "./photos/cesar.JPG";
 import nacier from "./photos/nacier.JPG";
-// import jordan from "./photos/jordan.JPG";
 import jorden from "./photos/jorden.JPG";
 import caston from "./photos/caston.JPG";
 
-
 export const photoshoots = [
-  
-    {
-      name: "Sirrea",
-      photo: sirrea2,
-      views: "2",
-      social: <a href="https://www.instagram.com/si.si._">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Jace",
+    photo: jace,
+    social: (
+      <a href="https://www.instagram.com/iamjacep">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Sirrea",
-      photo: sirrea,
-      views: "2",
-      social: <a href="https://www.instagram.com/si.si._">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Eddie",
+    photo: edward,
+    social: (
+      <a href="https://www.instagram.com/_eddieestrada">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Rachely",
-      photo: rachely,
-      views: "1"
-    },
-  
-    {
-      name: "Rachely",
-      photo: rachely2,
-      views: "1"
-    },  
-    
-    {
-      name: "Shoniah",
-      photo: niah,
-      views: "1",
-      social: <a href="https://www.instagram.com/niah_torres">
-      <AiFillInstagram />
-    </a>,
-    },
-    {
-      name: "Shoniah",
-      photo: shoniah2,
-      views: "1",
-      social: <a href="https://www.instagram.com/niah_torres">
-      <AiFillInstagram />
-    </a>,
-    },
-  
-    {
-      name: "Tessa",
-      photo: tessa,
-      views: "1",
-      social: <a href="https://www.instagram.com/tessavictoriaaa">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Devonte",
+    photo: devonte,
+    social: (
+      <a href="https://www.instagram.com/doseofdevy">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Tessa",
-      photo: tessa2,
-      views: "1",
-      social: <a href="https://www.instagram.com/tessavictoriaaa">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Gavin",
+    photo: gavin,
+    social: (
+      <a href="https://www.instagram.com/marks_arc">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Zianna",
-      photo: zianna2,
-      views: "1",
-      social: <a href="https://www.instagram.com/zianna.ish">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Jaylen",
+    photo: jaylen,
+    social: (
+      <a href="https://www.instagram.com/jp__savyy">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Zianna",
-      photo: zianna,
-      views: "1",
-      social: <a href="https://www.instagram.com/zianna.ish">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Nacier",
+    photo: nacier,
+    social: (
+      <a href="https://www.instagram.com/bboynasty">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Karen",
-      photo: karen,
-      views: "1"
-    },
+  {
+    name: "Jorden",
+    photo: jorden,
+    social: (
+      <a href="https://www.instagram.com/reignsaenz">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Zenobia",
-      photo: zenobia,
-      views: "1",
-      social: <a href="https://www.instagram.com/awesomely.weird">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Cesar",
+    photo: cesar,
+  },
 
-    {
-      name: "Zenobia",
-      photo: zenobia2,
-      views: "1",
-      social: <a href="https://www.instagram.com/awesomely.weird">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Caston",
+    photo: caston,
+    social: (
+      <a href="https://www.instagram.com/boydcast">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Abigael",
-      photo: abigale,
-      views: "1",
-      social: <a href="https://www.instagram.com/abi.gael__">
-      <AiFillInstagram />
-    </a>,
+  {
+    name: "Sirrea",
+    photo: sirrea2,
+    social: (
+      <a href="https://www.instagram.com/si.si._">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    },
+  {
+    photo: sirrea,
+  },
 
-    {
-      name: "Cassidy",
-      photo: cassidy,
-      views: "1",
-      social: <a href="https://www.instagram.com/cassidy.delilah">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    photo: sirrea4,
+  },
 
-    {
-      name: "Karina",
-      photo: karinaP2,
-      views: "1",
-      
-    },
+  {
+    name: "Rachely",
+    photo: rachely,
+  },
 
-    {
-      name: "Karina",
-      photo: karina,
-      views: "1"
-    },
+  {
+    photo: rachely2,
+  },
 
-    // {
-    //   name: "Jasline",
-    //   photo: jasline,
-    //   views: "0"
-    // },
+  {
+    photo: rachely3,
+  },
 
-    {
-      name: "Nashalae",
-      photo: nashalae,
-      views: "1",
-      social: <a href="https://www.instagram.com/nashalae">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Zianna",
+    photo: zianna2,
+    social: (
+      <a href="https://www.instagram.com/zianna.ish">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Lizz",
-      photo: lizz,
-      views: "1",
-      social: <a href="https://www.instagram.com/lizz.allday">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    photo: zianna,
+  },
 
-    {
-      name: "Lizz",
-      photo: lizz2,
-      views: "1",
-      social: <a href="https://www.instagram.com/lizz.allday">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    photo: zianna3,
+  },
 
-    // {
-    //   name: "Brittney",
-    //   photo: brittney,
-    //   views: "0"
-    // },
+  {
+    name: "Zenobia",
+    photo: zenobia,
+    social: (
+      <a href="https://www.instagram.com/awesomely.weird">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Edny",
-      photo: edny,
-      views: "1",
-      social: <a href="https://www.instagram.com/e.xploraa">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    photo: zenobia2,
+  },
 
-    {
-      name: "Eddie",
-      photo: edward,
-      views: "1",
-      social: <a href="https://www.instagram.com/_eddieestrada">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    photo: zenobia3,
+  },
 
-    {
-      name: "Devonte",
-      photo: devonte,
-      views: "1",
-      social: <a href="https://www.instagram.com/doseofdevy">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Shoniah",
+    photo: niah,
+    social: (
+      <a href="https://www.instagram.com/niah_torres">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Cesar",
-      photo: cesar,
-      views: "1",
+  {
+    photo: shoniah2,
+  },
 
-    },
+  {
+    name: "Abigael",
+    photo: abigale,
+    social: (
+      <a href="https://www.instagram.com/abi.gael__">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Nacier",
-      photo: nacier,
-      views: "1",
-      social: <a href="https://www.instagram.com/bboynasty">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Tessa",
+    photo: tessa,
+    social: (
+      <a href="https://www.instagram.com/tessavictoriaaa">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    // {
-    //   name: "Jordan",
-    //   photo: jordan,
-    //   views: "0",
-    //   social: <a href="https://www.instagram.com/mr_theatrics">
-    //   <AiFillInstagram />
-    // </a>,
-    // },
+  {
+    photo: tessa2,
+  },
 
-    {
-      name: "Jorden",
-      photo: jorden,
-      views: "1",
-      social: <a href="https://www.instagram.com/reignsaenz">
-      <AiFillInstagram />
-    </a>,
-    },
+  {
+    name: "Cassidy",
+    photo: cassidy,
+    social: (
+      <a href="https://www.instagram.com/cassidy.delilah">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
 
-    {
-      name: "Caston",
-      photo: caston,
-      views: "1",
-      social: <a href="https://www.instagram.com/boydcast">
-      <AiFillInstagram />
-    </a>,
-    }
-]
+  {
+    name: "Karina",
+    photo: karinaP2,
+  },
+
+  {
+    photo: karina,
+  },
+
+  {
+    photo: karinaP,
+  },
+
+  {
+    name: "Nashalae",
+    photo: nashalae,
+    social: (
+      <a href="https://www.instagram.com/nashalae">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
+
+  {
+    name: "Lizz",
+    photo: lizz,
+    social: (
+      <a href="https://www.instagram.com/lizz.allday">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
+
+  {
+    photo: lizz2,
+  },
+
+  {
+    name: "Karen",
+    photo: karen,
+  },
+
+  {
+    photo: karen2,
+  },
+
+  {
+    name: "Edny",
+    photo: edny,
+    social: (
+      <a href="https://www.instagram.com/e.xploraa">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
+];
 
 export const prices = [
   {
@@ -300,8 +312,7 @@ export const prices = [
   },
 ];
 
-export const requirements = [  
-  
+export const requirements = [
   {
     id: 1,
     icon: <IoTimerOutline />,
@@ -313,6 +324,7 @@ export const requirements = [
     id: 2,
     icon: <MdLocalAtm />,
     text: "Deposit",
-    amount: "50% or Full payment with Zelle",
-  }
-]
+    amount:
+      "Half payment before shoot & the other half after shoot or Full payment with ZELLE and or CASH",
+  },
+];
