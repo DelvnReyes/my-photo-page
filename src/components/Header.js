@@ -40,11 +40,11 @@ const Header = () => {
                 <AiFillInstagram />
               </a> */}
 
-              <a href="https://twitter.com/DelvnReyes">
+              <a href="https://twitter.com/DelvnReyes" target="_blank" rel="noopener noreferrer">
               <FaXTwitter />
               </a>
 
-              <a href="https://www.linkedin.com/in/delvinreyes/">
+              <a href="https://www.linkedin.com/in/delvinreyes/" target="_blank" rel="noopener noreferrer">
                 <AiFillLinkedin />
               </a>
             </div>
