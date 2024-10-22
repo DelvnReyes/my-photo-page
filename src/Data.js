@@ -45,7 +45,7 @@ export const photoshoots = [
     name: "Jace",
     photo: jace,
     social: (
-      <a href="https://www.instagram.com/iamjacep">
+      <a href="https://www.instagram.com/iamjacep/">
         <AiFillInstagram />
       </a>
     ),
@@ -55,7 +55,7 @@ export const photoshoots = [
     name: "Eddie",
     photo: edward,
     social: (
-      <a href="https://www.instagram.com/_eddieestrada">
+      <a href="https://www.instagram.com/_eddieestrada/">
         <AiFillInstagram />
       </a>
     ),
@@ -65,7 +65,7 @@ export const photoshoots = [
     name: "Devonte",
     photo: devonte,
     social: (
-      <a href="https://www.instagram.com/doseofdevy">
+      <a href="https://www.instagram.com/doseofdevy/">
         <AiFillInstagram />
       </a>
     ),
@@ -75,7 +75,7 @@ export const photoshoots = [
     name: "Gavin",
     photo: gavin,
     social: (
-      <a href="https://www.instagram.com/marks_arc">
+      <a href="https://www.instagram.com/marks_arc/">
         <AiFillInstagram />
       </a>
     ),
@@ -85,7 +85,7 @@ export const photoshoots = [
     name: "Jaylen",
     photo: jaylen,
     social: (
-      <a href="https://www.instagram.com/jp__savyy">
+      <a href="https://www.instagram.com/jp__savyy/">
         <AiFillInstagram />
       </a>
     ),
@@ -95,7 +95,7 @@ export const photoshoots = [
     name: "Nacier",
     photo: nacier,
     social: (
-      <a href="https://www.instagram.com/bboynasty">
+      <a href="https://www.instagram.com/bboynasty/">
         <AiFillInstagram />
       </a>
     ),
@@ -105,7 +105,7 @@ export const photoshoots = [
     name: "Jorden",
     photo: jorden,
     social: (
-      <a href="https://www.instagram.com/reignsaenz">
+      <a href="https://www.instagram.com/reignsaenz/">
         <AiFillInstagram />
       </a>
     ),
@@ -120,7 +120,7 @@ export const photoshoots = [
     name: "Caston",
     photo: caston,
     social: (
-      <a href="https://www.instagram.com/boydcast">
+      <a href="https://www.instagram.com/boydcast/">
         <AiFillInstagram />
       </a>
     ),
@@ -130,7 +130,7 @@ export const photoshoots = [
     name: "Sirrea",
     photo: sirrea2,
     social: (
-      <a href="https://www.instagram.com/si.si._">
+      <a href="https://www.instagram.com/si.si._/">
         <AiFillInstagram />
       </a>
     ),
@@ -161,7 +161,7 @@ export const photoshoots = [
     name: "Zianna",
     photo: zianna2,
     social: (
-      <a href="https://www.instagram.com/zianna.ish">
+      <a href="https://www.instagram.com/zianna.ish/">
         <AiFillInstagram />
       </a>
     ),
@@ -179,7 +179,7 @@ export const photoshoots = [
     name: "Zenobia",
     photo: zenobia,
     social: (
-      <a href="https://www.instagram.com/awesomely.weird">
+      <a href="https://www.instagram.com/awesomely.weird/">
         <AiFillInstagram />
       </a>
     ),
@@ -197,7 +197,7 @@ export const photoshoots = [
     name: "Shoniah",
     photo: niah,
     social: (
-      <a href="https://www.instagram.com/niah_torres">
+      <a href="https://www.instagram.com/niah_torres/">
         <AiFillInstagram />
       </a>
     ),
@@ -211,7 +211,7 @@ export const photoshoots = [
     name: "Abigael",
     photo: abigale,
     social: (
-      <a href="https://www.instagram.com/abi.gael__">
+      <a href="https://www.instagram.com/abi.gael__/">
         <AiFillInstagram />
       </a>
     ),
@@ -221,7 +221,7 @@ export const photoshoots = [
     name: "Tessa",
     photo: tessa,
     social: (
-      <a href="https://www.instagram.com/tessavictoriaaa">
+      <a href="https://www.instagram.com/tessavictoriaaa/">
         <AiFillInstagram />
       </a>
     ),
@@ -235,7 +235,7 @@ export const photoshoots = [
     name: "Cassidy",
     photo: cassidy,
     social: (
-      <a href="https://www.instagram.com/cassidy.delilah">
+      <a href="https://www.instagram.com/cassidy.delilah/">
         <AiFillInstagram />
       </a>
     ),
@@ -258,7 +258,7 @@ export const photoshoots = [
     name: "Nashalae",
     photo: nashalae,
     social: (
-      <a href="https://www.instagram.com/nashalae">
+      <a href="https://www.instagram.com/nashalae/">
         <AiFillInstagram />
       </a>
     ),
@@ -268,7 +268,7 @@ export const photoshoots = [
     name: "Lizz",
     photo: lizz,
     social: (
-      <a href="https://www.instagram.com/lizz.allday">
+      <a href="https://www.instagram.com/lizz.allday/">
         <AiFillInstagram />
       </a>
     ),
@@ -291,7 +291,7 @@ export const photoshoots = [
     name: "Edny",
     photo: edny,
     social: (
-      <a href="https://www.instagram.com/e.xploraa">
+      <a href="https://www.instagram.com/e.xploraa/">
         <AiFillInstagram />
       </a>
     ),
