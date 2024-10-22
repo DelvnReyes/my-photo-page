@@ -21,9 +21,11 @@ const App = () => {
 
   useEffect(() => {
     if (selectedPic !== null) {
-      document.body.classList.add("no-scroll"); // Disable scrolling when modal is open
+      // Disable scrolling when modal is open
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.classList.remove("no-scroll"); // Enable scrolling when modal is closed
+      // Re-enable scrolling when modal is closed
+      document.body.style.overflow = 'auto';
     }
   }, [selectedPic]);
 
