@@ -19,6 +19,14 @@ const App = () => {
     setPics(photoshoots); // Set the photoshoot data
   }, []);
 
+  useEffect(() => {
+    if (selectedPic !== null) {
+      document.body.classList.add("no-scroll"); // Disable scrolling when modal is open
+    } else {
+      document.body.classList.remove("no-scroll"); // Enable scrolling when modal is closed
+    }
+  }, [selectedPic]);
+
   const handleClick = (index) => {
     setSelectedPic(index); // Set the index of the selected image
   };
@@ -111,10 +119,10 @@ const App = () => {
 
             {/* Display image name and views */}
             <div className="text-center mt-4">
-              {/* <h2 className="text-white text-2xl font-semibold flex justify-center items-center">
+              <h2 className="text-white text-2xl font-semibold flex justify-center items-center">
                 {pics[selectedPic].social}
                 {pics[selectedPic].name}
-              </h2> */}
+              </h2>
               <p className="text-white">Views: {pics[selectedPic].views}</p>{" "}
               {/* Image views */}
             </div>
