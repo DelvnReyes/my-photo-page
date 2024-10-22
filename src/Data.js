@@ -40,7 +40,7 @@ export const photoshoots = [
     {
       name: "Sirrea",
       photo: sirrea2,
-      views: "0",
+      views: "2",
       social: <a href="https://www.instagram.com/si.si._">
       <AiFillInstagram />
     </a>,
