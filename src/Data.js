@@ -3,20 +3,29 @@ import { IoTimerOutline } from "react-icons/io5";
 import { MdLocalAtm } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 
+import cs from "./photos/cs.jpg";
+import abigale2 from "./photos/abigale2.jpg";
+import abigale3 from "./photos/abigale3.JPG";
+import jasline from "./photos/jasline.jpg";
+import brittney from "./photos/brittney.JPG";
 import jace from "./photos/jace.jpg";
 import jaylen from "./photos/jaylen.JPG";
 import sirrea2 from "./photos/sirrea2.JPG";
 import sirrea from "./photos/sirrea3.JPG";
 import sirrea4 from "./photos/sirrea4.JPG";
+import sirrea5 from "./photos/sirrea5.jpg";
+import sirrea6 from "./photos/sirrea6.JPG";
 import rachely from "./photos/rachely.JPG";
 import rachely2 from "./photos/rachely2.JPG";
 import rachely3 from "./photos/rachely3.JPG";
+import rachely4 from "./photos/rachely4.jpg";
 import niah from "./photos/niah.jpg";
 import shoniah2 from "./photos/shoniah2.JPG";
 import abigale from "./photos/abigaleBoudoir.jpg";
 import zianna2 from "./photos/zianna2.JPG";
 import zianna from "./photos/zianna.JPG";
 import zianna3 from "./photos/zianna3.JPEG";
+import zianna4 from "./photos/zianna4.JPG"
 import tessa from "./photos/tessa.JPG";
 import tessa2 from "./photos/tessa2.JPG";
 import cassidy from "./photos/cassidy.JPG";
@@ -40,159 +49,81 @@ import nacier from "./photos/nacier.JPG";
 import jorden from "./photos/jorden.JPG";
 import caston from "./photos/caston.JPG";
 
+export const categories = [
+  {
+    name: "LIFESTYLE",
+    coverImage: sirrea4, // Cover image for the nature category
+  },
+  
+  {
+    name: "PORTRAIT",
+    coverImage: zianna2, // Cover image for the architecture category
+  },
+
+  {
+    name: "BOUDOIR",
+    coverImage: zenobia2,
+  },
+
+  {
+    name: "SNEAKERS",
+    coverImage: cs,
+  },
+  
+];
+
 export const photoshoots = [
   {
-    name: "Jace",
-    photo: jace,
-    social: (
-      <a href="https://www.instagram.com/iamjacep/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Eddie",
-    photo: edward,
-    social: (
-      <a href="https://www.instagram.com/_eddieestrada/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Devonte",
-    photo: devonte,
-    social: (
-      <a href="https://www.instagram.com/doseofdevy/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Gavin",
-    photo: gavin,
-    social: (
-      <a href="https://www.instagram.com/marks_arc/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Jaylen",
-    photo: jaylen,
-    social: (
-      <a href="https://www.instagram.com/jp__savyy/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Nacier",
-    photo: nacier,
-    social: (
-      <a href="https://www.instagram.com/bboynasty/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Jorden",
-    photo: jorden,
-    social: (
-      <a href="https://www.instagram.com/reignsaenz/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    name: "Cesar",
-    photo: cesar,
-  },
-
-  {
-    name: "Caston",
-    photo: caston,
-    social: (
-      <a href="https://www.instagram.com/boydcast/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
     name: "Sirrea",
-    photo: sirrea2,
+    photo: sirrea4,
     social: (
       <a href="https://www.instagram.com/si.si._/" target="_blank" rel="noopener noreferrer">
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
+  },
+  
+  {
+    
+    photo: sirrea2,
+    category: "LIFESTYLE"
   },
 
   {
     photo: sirrea,
+    category: "LIFESTYLE"
   },
 
-  {
-    photo: sirrea4,
-  },
+  
 
   {
     name: "Rachely",
     photo: rachely,
+    category: "LIFESTYLE"
   },
 
   {
     photo: rachely2,
+    category: "LIFESTYLE"
   },
 
   {
     photo: rachely3,
+    category: "LIFESTYLE"
   },
-
+  
   {
     name: "Zianna",
-    photo: zianna2,
+    photo: zianna3,
+    category: "LIFESTYLE",
     social: (
       <a href="https://www.instagram.com/zianna.ish/" target="_blank" rel="noopener noreferrer">
         <AiFillInstagram />
       </a>
     ),
   },
-
-  {
-    photo: zianna,
-  },
-
-  {
-    photo: zianna3,
-  },
-
-  {
-    name: "Zenobia",
-    photo: zenobia,
-    social: (
-      <a href="https://www.instagram.com/awesomely.weird/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
-  {
-    photo: zenobia2,
-  },
-
-  {
-    photo: zenobia3,
-  },
-
+  
   {
     name: "Shoniah",
     photo: niah,
@@ -201,22 +132,14 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
   },
 
   {
     photo: shoniah2,
+    category: "LIFESTYLE"
   },
-
-  {
-    name: "Abigael",
-    photo: abigale,
-    social: (
-      <a href="https://www.instagram.com/abi.gael__/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
-  },
-
+  
   {
     name: "Tessa",
     photo: tessa,
@@ -225,10 +148,12 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
   },
 
   {
     photo: tessa2,
+    category: "LIFESTYLE"
   },
 
   {
@@ -239,19 +164,23 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
   },
 
   {
     name: "Karina",
     photo: karinaP2,
+    category: "LIFESTYLE"
   },
 
   {
     photo: karina,
+    category: "LIFESTYLE"
   },
 
   {
     photo: karinaP,
+    category: "LIFESTYLE"
   },
 
   {
@@ -262,29 +191,31 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
   },
+
+  
 
   {
     name: "Lizz",
-    photo: lizz,
+    photo: lizz2,
     social: (
       <a href="https://www.instagram.com/lizz.allday/" target="_blank" rel="noopener noreferrer">
         <AiFillInstagram />
       </a>
     ),
-  },
-
-  {
-    photo: lizz2,
+    category: "LIFESTYLE"
   },
 
   {
     name: "Karen",
     photo: karen,
+    category: "LIFESTYLE"
   },
 
   {
     photo: karen2,
+    category: "LIFESTYLE"
   },
 
   {
@@ -295,7 +226,225 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
   },
+
+  {
+    name: "Zianna",
+    photo: zianna2,
+    social: (
+      <a href="https://www.instagram.com/zianna.ish/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "PORTRAIT"
+  },
+
+  {
+    photo: zianna4,
+    category: "PORTRAIT"
+  },
+
+  {
+    name: "Sirrea",
+    photo: sirrea5,
+    social: (
+      <a href="https://www.instagram.com/si.si._/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "PORTRAIT"
+  },
+
+  {
+    photo: sirrea6,
+    category: "PORTRAIT"
+  },
+
+  {
+    name: "Rachely",
+    photo: rachely4,
+    category: "PORTRAIT"
+  },
+
+  {
+    name: "Brittney",
+    photo: brittney,
+    category: "PORTRAIT"
+  },
+
+  {
+    name: "Jasline",
+    photo: jasline,
+    category: "PORTRAIT"
+  },
+  
+  {
+    name: "Lizz",
+    photo: lizz,
+    social: (
+      <a href="https://www.instagram.com/lizz.allday/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "PORTRAIT"
+  }, 
+  
+  {
+    name: "Zenobia",
+    photo: zenobia2,
+    social: (
+      <a href="https://www.instagram.com/awesomely.weird/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "BOUDOIR"
+  },
+  
+  {
+    photo: zenobia,
+    category: "BOUDOIR"
+  },
+
+ 
+
+  {
+    photo: zenobia3,
+    category: "BOUDOIR"
+  },
+
+
+  {
+    name: "Zianna",
+    photo: zianna,
+    category: "BOUDOIR",
+    social: (
+      <a href="https://www.instagram.com/zianna.ish/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+  },
+
+  
+
+  
+
+  {
+    name: "Abigael",
+    photo: abigale,
+    social: (
+      <a href="https://www.instagram.com/abi.gael__/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "BOUDOIR"
+  },
+
+  {
+    photo: abigale2,
+    category: "BOUDOIR"
+  },
+
+  {
+    photo: abigale3,
+    category: "BOUDOIR"
+  },
+  
+  {
+    name: "Jace",
+    photo: jace,
+    social: (
+      <a href="https://www.instagram.com/iamjacep/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Eddie",
+    photo: edward,
+    social: (
+      <a href="https://www.instagram.com/_eddieestrada/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Devonte",
+    photo: devonte,
+    social: (
+      <a href="https://www.instagram.com/doseofdevy/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE",
+  },
+
+  {
+    name: "Gavin",
+    photo: gavin,
+    social: (
+      <a href="https://www.instagram.com/marks_arc/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Jaylen",
+    photo: jaylen,
+    social: (
+      <a href="https://www.instagram.com/jp__savyy/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Nacier",
+    photo: nacier,
+    social: (
+      <a href="https://www.instagram.com/bboynasty/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Jorden",
+    photo: jorden,
+    social: (
+      <a href="https://www.instagram.com/reignsaenz/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Cesar",
+    photo: cesar,
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Caston",
+    photo: caston,
+    social: (
+      <a href="https://www.instagram.com/boydcast/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  
 ];
 
 export const prices = [

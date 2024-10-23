@@ -1,75 +1,76 @@
 import React, { useEffect, useState } from "react";
 import Photography from "./components/Photography";
-import { photoshoots } from "./Data";
+import { photoshoots, categories } from "./Data";
 import Header from "./components/Header";
 import Profilepic from "./components/Profilepic";
 import Prices from "./components/Prices";
 import Requirements from "./components/Requirements";
 import Footer from "./components/Footer";
-// import { AiOutlineClose } from "react-icons/ai";
-// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const App = () => {
   const [pics, setPics] = useState([]);
-  const [selectedPic, setSelectedPic] = useState(null); // State to track selected image index
-  const [touchStartX, setTouchStartX] = useState(0); // Track touch start X position
-  const [touchEndX, setTouchEndX] = useState(0); // Track touch end X position
+  // const [touchStartX, setTouchStartX] = useState(0); // Track touch start X position
+  // const [touchEndX, setTouchEndX] = useState(0); // Track touch end X position
+  const [selectedCategory, setSelectedCategory] = useState(null); // New state to track selected category
 
   useEffect(() => {
     setPics(photoshoots); // Set the photoshoot data
   }, []);
 
-  useEffect(() => {
-    if (selectedPic !== null) {
-      // Disable scrolling when modal is open
-      document.body.style.overflow = "hidden";
-    } else {
-      // Re-enable scrolling when modal is closed
-      document.body.style.overflow = "auto";
-    }
-  }, [selectedPic]);
+  // useEffect(() => {
+  //   if (selectedPic !== null) {
+  //     // Disable scrolling when modal is open
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     // Re-enable scrolling when modal is closed
+  //     document.body.style.overflow = "auto";
+  //   }
+  // }, [selectedPic]);
 
-  const handleClick = (index) => {
-    setSelectedPic(index); // Set the index of the selected image
+  const handleCategoryClick = (category) => {
+    const filteredPics = photoshoots.filter((pic) => pic.category === category);
+    setPics(filteredPics); // Update pics to show only the selected category
+    setSelectedCategory(category); // Update selected category
   };
 
-  const closeModal = () => {
-    setSelectedPic(null); // Close the modal
+  const resetCategory = () => {
+    setPics(photoshoots); // Reset to show all images
+    setSelectedCategory(null); // Reset category selection
   };
 
-  const showPrevious = () => {
-    if (selectedPic > 0) {
-      setSelectedPic(selectedPic - 1); // Show the previous image
-    }
-  };
+  // const showPrevious = () => {
+  //   if (selectedPic > 0) {
+  //     setSelectedPic(selectedPic - 1); // Show the previous image
+  //   }
+  // };
 
-  const showNext = () => {
-    if (selectedPic < pics.length - 1) {
-      setSelectedPic(selectedPic + 1); // Show the next image
-    }
-  };
+  // const showNext = () => {
+  //   if (selectedPic < pics.length - 1) {
+  //     setSelectedPic(selectedPic + 1); // Show the next image
+  //   }
+  // };
 
-  // Handle touch start
-  const handleTouchStart = (e) => {
-    setTouchStartX(e.touches[0].clientX); // Record the starting X position of the touch
-  };
+  // // Handle touch start
+  // const handleTouchStart = (e) => {
+  //   setTouchStartX(e.touches[0].clientX); // Record the starting X position of the touch
+  // };
 
-  // Handle touch move
-  const handleTouchMove = (e) => {
-    setTouchEndX(e.touches[0].clientX); // Continuously track the X position of the touch
-  };
+  // // Handle touch move
+  // const handleTouchMove = (e) => {
+  //   setTouchEndX(e.touches[0].clientX); // Continuously track the X position of the touch
+  // };
 
-  // Handle touch end (when the user lifts their finger)
-  const handleTouchEnd = () => {
-    // Detect swipe direction
-    if (touchStartX - touchEndX > 50) {
-      // Swipe left (show next image)
-      showNext();
-    } else if (touchEndX - touchStartX > 50) {
-      // Swipe right (show previous image)
-      showPrevious();
-    }
-  };
+  // // Handle touch end (when the user lifts their finger)
+  // const handleTouchEnd = () => {
+  //   // Detect swipe direction
+  //   if (touchStartX - touchEndX > 50) {
+  //     // Swipe left (show next image)
+  //     showNext();
+  //   } else if (touchEndX - touchStartX > 50) {
+  //     // Swipe right (show previous image)
+  //     showPrevious();
+  //   }
+  // };
 
   return (
     <div className="bg-gradient-to-r from-gray-800 to-gray-500">
@@ -77,16 +78,64 @@ const App = () => {
         <Header />
         <Profilepic />
 
+        {!selectedCategory && (
+          <div className="grid grid-cols-2 gap-4 py-5">
+            {categories.map((category) => (
+              <div
+                key={category.name}
+                className="font-extralight cursor-pointer"
+                onClick={() => handleCategoryClick(category.name)}
+              >
+                <img
+                  src={category.coverImage}
+                  alt={category.name}
+                  className="w-64 h-65 object-cover rounded-lg"
+                />
+                <h3 className="text-center text-white text-xl mt-2">
+                  {category.name}
+                </h3>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {selectedCategory && (
+          <div className="text-center mt-4 py-4">
+            <button
+              className="bg-gradient-to-r from-indigo-500 text-white px-4 py-2 rounded font-semibold"
+              onClick={resetCategory}
+            >
+              Back to Categories
+            </button>
+          </div>
+        )}
+
         {/* Display images in a grid */}
-        <div className="grid grid-cols-3 gap-4">
-          {pics.map((picture, index) => (
-            <Photography
-              key={picture.image}
-              image={picture}
-              onClick={() => handleClick(index)} // Set index of clicked image
-            />
-          ))}
-        </div>
+        {selectedCategory && (
+          <div className="flex flex-col justify-center items-center space-y-1">
+            {pics.map((picture) => (
+              <Photography
+                key={picture.photo}
+                image={picture}
+              />
+              
+              
+            ))}
+            
+          </div>
+        )}
+        
+
+        {selectedCategory && (
+          <div className="text-center mt-4 py-2">
+            <button
+              className="bg-gradient-to-r from-indigo-500 text-white px-4 py-2 rounded font-semibold"
+              onClick={resetCategory}
+            >
+              Back to Categories
+            </button>
+          </div>
+        )}
 
         <Prices />
         <Requirements />
@@ -94,41 +143,6 @@ const App = () => {
 
       <Footer />
 
-      {/* Modal for displaying selected image */}
-      {selectedPic !== null && (
-        <div
-          className="fixed inset-0 flex justify-center items-center backdrop-blur-lg bg-opacity-75 z-50"
-          onClick={closeModal}
-          onTouchStart={handleTouchStart} // Start tracking touch
-          onTouchMove={handleTouchMove} // Continuously track touch position
-          onTouchEnd={handleTouchEnd} // Detect swipe direction when touch ends
-        >
-          {/* IN CASE CLOSE FUNCTIONALITY DONT WORK ON MOBILE*/}
-          <div className="relative" onClick={closeModal}>
-            {/* Close button */}
-            {/* <AiOutlineClose
-              size={40}
-              className="absolute top-2 right-2 text-[#64748b] cursor-pointer"
-              onClick={closeModal}
-            /> */}
-
-            {/* Display selected image */}
-            <img
-              src={pics[selectedPic].photo} // Access the image from pics array
-              alt={pics[selectedPic].name}
-              className="max-w-[90%] max-h-[90vh] mx-auto"
-            />
-
-            {/* Display image name and views */}
-            <div className="text-center mt-4 flex justify-center items-center">
-              <h2 className="text-white text-3xl font-semibold flex justify-center items-center">
-                {pics[selectedPic].social}
-              </h2>
-              <p className="text-white text-2xl">{pics[selectedPic].name} </p>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
