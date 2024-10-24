@@ -527,7 +527,7 @@ export const photoshoots = [
   },
 
   {
-    name: "Airmax 1s 'Shimma Shimma'",
+    name: "Airmax 1s 'Shima Shima'",
     photo: shimma,
     category: "ART ON FEETS"
   },
