@@ -3,7 +3,6 @@ import { IoTimerOutline } from "react-icons/io5";
 import { MdLocalAtm } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 
-import cs from "./photos/cs.jpg";
 import abigale2 from "./photos/abigale2.jpg";
 import abigale3 from "./photos/abigale3.JPG";
 import jasline from "./photos/jasline.jpg";
@@ -49,6 +48,27 @@ import nacier from "./photos/nacier.JPG";
 import jorden from "./photos/jorden.JPG";
 import caston from "./photos/caston.JPG";
 
+
+import j32 from "./photos/J32.JPG";
+import j3 from "./photos/J3.JPG";
+import j4 from "./photos/J4.JPG";
+import j42 from "./photos/J42.JPG";
+import nb90602 from "./photos/NB90602.JPG";
+import nb9060 from "./photos/NB9060.JPG";
+import timbs from "./photos/timbs.JPG";
+import timbs2 from "./photos/timbs2.JPG";
+import overbreak from "./photos/overbreak.JPG";
+import j1 from "./photos/J1.JPG";
+import smokegrey1 from "./photos/smokegrey1.JPG";
+import crocs from "./photos/crocs.jpg";
+import shimma from "./photos/shimma.JPG";
+import shimma2 from "./photos/shimma2.JPG";
+import melo from "./photos/melo.jpg";
+import melo2 from "./photos/melo2.jpg";
+import nb from "./photos/NB.JPG";
+import nb2 from "./photos/NB2.JPG";
+
+
 export const categories = [
   {
     name: "LIFESTYLE",
@@ -66,8 +86,8 @@ export const categories = [
   },
 
   {
-    name: "SNEAKERS",
-    coverImage: cs,
+    name: "ART ON FEETS",
+    coverImage: j32,
   },
   
 ];
@@ -94,8 +114,6 @@ export const photoshoots = [
     photo: sirrea,
     category: "LIFESTYLE"
   },
-
-  
 
   {
     name: "Rachely",
@@ -325,10 +343,6 @@ export const photoshoots = [
     ),
   },
 
-  
-
-  
-
   {
     name: "Abigael",
     photo: abigale,
@@ -442,6 +456,107 @@ export const photoshoots = [
       </a>
     ),
     category: "LIFESTYLE"
+  },
+
+  {
+    name: "Jordan 3s Denim 'Fired Red'",
+    photo: j32,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: j3,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Jordan 4s 'Oxidized Green'",
+    photo: j4,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: j42,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "New Balance 9060 'Rain Cloud'",
+    photo: nb90602,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: nb9060,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Timbaland 'Limited Gold Edition'",
+    photo: timbs,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: timbs2,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Nike Undercover x Overbreak SP 'OVERCAST'",
+    photo: overbreak,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Jordan 1s 'Black White 2.0'",
+    photo: j1,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Jordan 1s 'Smoke Grey'",
+    photo: smokegrey1,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Salehe Bembury x Crocs",
+    photo: crocs,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Airmax 1s 'Shimma Shimma'",
+    photo: shimma,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: shimma2,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "Jordan 9s 'Melo'",
+    photo: melo,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: melo2,
+    category: "ART ON FEETS"
+  },
+
+  {
+    name: "New Balance 2002r 'Protection Pack'",
+    photo: nb,
+    category: "ART ON FEETS"
+  },
+
+  {
+    photo: nb2,
+    category: "ART ON FEETS"
   },
 
   

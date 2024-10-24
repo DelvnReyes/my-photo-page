@@ -2,10 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Transitions";
-import {
-  // AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
@@ -23,7 +20,7 @@ const Header = () => {
             <span className="text-white mr-2">I am a</span>
             <TypeAnimation
               sequence={[
-                "Dancer",
+                "Creator",
                 2000,
                 "Photographer",
                 2000,
@@ -36,15 +33,27 @@ const Header = () => {
               repeat={Infinity}
             />
             <div className="flex items-center justify-center text-white">
-              {/* <a href="https://www.instagram.com/ScvpeGoat">
+              <a
+                href="https://www.instagram.com/DelvnReyes/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiFillInstagram />
-              </a> */}
-
-              <a href="https://twitter.com/DelvnReyes" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter />
               </a>
 
-              <a href="https://www.linkedin.com/in/delvinreyes/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/DelvnReyes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaXTwitter />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/delvinreyes/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiFillLinkedin />
               </a>
             </div>
