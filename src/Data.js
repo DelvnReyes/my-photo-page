@@ -3,6 +3,7 @@ import { IoTimerOutline } from "react-icons/io5";
 import { MdLocalAtm } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 
+import ashton from "./photos/ashton.JPG";
 import abigale2 from "./photos/abigale2.jpg";
 import abigale3 from "./photos/abigale3.JPG";
 import jasline from "./photos/jasline.jpg";
@@ -24,7 +25,8 @@ import abigale from "./photos/abigaleBoudoir.jpg";
 import zianna2 from "./photos/zianna2.JPG";
 import zianna from "./photos/zianna.JPG";
 import zianna3 from "./photos/zianna3.JPEG";
-import zianna4 from "./photos/zianna4.JPG"
+import zianna4 from "./photos/zianna4.JPG";
+import zianna5 from "./photos/zianna5.JPG"
 import tessa from "./photos/tessa.JPG";
 import tessa2 from "./photos/tessa2.JPG";
 import cassidy from "./photos/cassidy.JPG";
@@ -46,6 +48,9 @@ import devonte from "./photos/devonte2.JPG";
 import cesar from "./photos/cesar.JPG";
 import nacier from "./photos/nacier.JPG";
 import jorden from "./photos/jorden.JPG";
+import jordan2 from "./photos/jordan2.JPG";
+import jordan3 from "./photos/jordan3.JPG";
+import jordan4 from "./photos/jordan4.JPG";
 import caston from "./photos/caston.JPG";
 
 
@@ -307,6 +312,28 @@ export const photoshoots = [
     ),
     category: "PORTRAIT"
   }, 
+
+  {
+    name: "Jordan",
+    photo: jordan3,
+    social: (
+      <a href="https://www.instagram.com/mr_theatrics/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "PORTRAIT"
+  },
+
+  {
+    name: "Ashton",
+    photo: ashton,
+    social: (
+      <a href="https://www.instagram.com/adtglobal_/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "PORTRAIT"
+  },
   
   {
     name: "Zenobia",
@@ -341,6 +368,11 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+  },
+
+  {
+    photo: zianna5,
+    category: "BOUDOIR",
   },
 
   {
@@ -427,6 +459,22 @@ export const photoshoots = [
         <AiFillInstagram />
       </a>
     ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    name: "Jordan",
+    photo: jordan2,
+    social: (
+      <a href="https://www.instagram.com/mr_theatrics/" target="_blank" rel="noopener noreferrer">
+        <AiFillInstagram />
+      </a>
+    ),
+    category: "LIFESTYLE"
+  },
+
+  {
+    photo: jordan4,
     category: "LIFESTYLE"
   },
 
