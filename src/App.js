@@ -118,8 +118,6 @@ const App = () => {
                 key={picture.photo}
                 image={picture}
               />
-              
-              
             ))}
             
           </div>

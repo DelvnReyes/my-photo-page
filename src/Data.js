@@ -444,7 +444,7 @@ export const photoshoots = [
     name: "Jaylen",
     photo: jaylen,
     social: (
-      <a href="https://www.instagram.com/jp__savyy/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/jlen_da_r3alest/" target="_blank" rel="noopener noreferrer">
         <AiFillInstagram />
       </a>
     ),
