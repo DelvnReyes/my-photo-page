@@ -3,7 +3,7 @@ import Photography from "./components/Photography";
 import { photoshoots, categories } from "./Data";
 import Header from "./components/Header";
 import Profilepic from "./components/Profilepic";
-import Prices from "./components/Prices";
+// import Prices from "./components/Prices";
 import Requirements from "./components/Requirements";
 import Footer from "./components/Footer";
 
@@ -135,7 +135,7 @@ const App = () => {
           </div>
         )}
 
-        <Prices />
+        {/* <Prices /> */}
         <Requirements />
       </div>
 
