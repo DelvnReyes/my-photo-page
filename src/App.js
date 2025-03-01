@@ -112,7 +112,7 @@ const App = () => {
 
         {/* Display images in a grid */}
         {selectedCategory && (
-          <div className="flex flex-col justify-center items-center space-y-1">
+          <div className="grid grid-cols-3 gap-4 py-5">
             {pics.map((picture) => (
               <Photography
                 key={picture.photo}
@@ -146,3 +146,42 @@ const App = () => {
 };
 
 export default App;
+
+// import React, { useEffect, useState } from "react";
+// import Photography from "./components/Photography";
+// import { photoshoots } from "./Data";
+// import Header from "./components/Header";
+// import Profilepic from "./components/Profilepic";
+// import Requirements from "./components/Requirements";
+// import Footer from "./components/Footer";
+
+// const App = () => {
+//   const [pics, setPics] = useState([]);
+
+//   useEffect(() => {
+//     setPics(photoshoots); // Set the photoshoot data
+//   }, []);
+
+//   return (
+//     <div className="bg-gradient-to-r from-gray-800 to-gray-500">
+//       <div className="container mx-auto">
+//         <Header />
+//         <Profilepic />
+
+//         {/* Display images in a 4-column grid */}
+//         <div className="grid grid-cols-3 gap-4 py-5">
+//           {pics.map((picture) => (
+//             <Photography key={picture.photo} image={picture} />
+//           ))}
+//         </div>
+
+//         <Requirements />
+//       </div>
+
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default App;
+
