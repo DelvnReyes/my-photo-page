@@ -11,12 +11,15 @@ const Profilepic = () => {
           className="rounded-full w-40 h-40 object-cover"
         ></img>
       </div>
-      <div className="flex items-center justify-center font-bold mb-1 text-white">
-          Photos by Delvin Reyes{" "}
-          <div className="text-blue-400 text-xs">
-            <MdVerified />
-          </div>
+      <div className="flex items-center justify-center text-2xl mb-1 text-white gap-1">
+        Photos by Delvin Reyes 
+        <div className="text-blue-400 text-sm py-2">
+          <MdVerified/>
         </div>
+      </div>
+      <div className="flex items-center justify-center  mb-1 text-white">
+        Brooklyn, New York
+      </div>
     </div>
   );
 };

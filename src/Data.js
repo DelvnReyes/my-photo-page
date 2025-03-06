@@ -1,7 +1,6 @@
 import { MdAttachMoney } from "react-icons/md";
 import { IoTimerOutline } from "react-icons/io5";
 import { MdLocalAtm } from "react-icons/md";
-import { AiFillInstagram } from "react-icons/ai";
 
 import ashton from "./photos/ashton.JPG";
 import abigale2 from "./photos/abigale2.jpg";
@@ -99,13 +98,7 @@ export const categories = [
 
 export const photoshoots = [
   {
-    name: "Sirrea",
     photo: sirrea4,
-    social: (
-      <a href="https://www.instagram.com/si.si._/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
   
@@ -121,7 +114,6 @@ export const photoshoots = [
   },
 
   {
-    name: "Rachely",
     photo: rachely,
     category: "LIFESTYLE"
   },
@@ -137,24 +129,12 @@ export const photoshoots = [
   },
   
   {
-    name: "Zianna",
     photo: zianna3,
     category: "LIFESTYLE",
-    social: (
-      <a href="https://www.instagram.com/zianna.ish/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
   },
   
   {
-    name: "Shoniah",
     photo: niah,
-    social: (
-      <a href="https://www.instagram.com/niah_torres/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
@@ -164,13 +144,7 @@ export const photoshoots = [
   },
   
   {
-    name: "Tessa",
     photo: tessa,
-    social: (
-      <a href="https://www.instagram.com/tessavictoriaaa/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
@@ -180,18 +154,11 @@ export const photoshoots = [
   },
 
   {
-    name: "Cassidy",
     photo: cassidy,
-    social: (
-      <a href="https://www.instagram.com/cassidy.delilah/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Karina",
     photo: karinaP2,
     category: "LIFESTYLE"
   },
@@ -207,31 +174,16 @@ export const photoshoots = [
   },
 
   {
-    name: "Nashalae",
     photo: nashalae,
-    social: (
-      <a href="https://www.instagram.com/nashalae/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
-  
-
   {
-    name: "Lizz",
     photo: lizz2,
-    social: (
-      <a href="https://www.instagram.com/lizz.allday/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Karen",
     photo: karen,
     category: "LIFESTYLE"
   },
@@ -242,24 +194,12 @@ export const photoshoots = [
   },
 
   {
-    name: "Edny",
     photo: edny,
-    social: (
-      <a href="https://www.instagram.com/e.xploraa/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Zianna",
     photo: zianna2,
-    social: (
-      <a href="https://www.instagram.com/zianna.ish/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "PORTRAIT"
   },
 
@@ -269,13 +209,7 @@ export const photoshoots = [
   },
 
   {
-    name: "Sirrea",
     photo: sirrea5,
-    social: (
-      <a href="https://www.instagram.com/si.si._/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "PORTRAIT"
   },
 
@@ -285,64 +219,37 @@ export const photoshoots = [
   },
 
   {
-    name: "Rachely",
     photo: rachely4,
     category: "PORTRAIT"
   },
 
   {
-    name: "Brittney",
     photo: brittney,
     category: "PORTRAIT"
   },
 
   {
-    name: "Jasline",
     photo: jasline,
     category: "PORTRAIT"
   },
   
   {
-    name: "Lizz",
     photo: lizz,
-    social: (
-      <a href="https://www.instagram.com/lizz.allday/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "PORTRAIT"
   }, 
 
   {
-    name: "Jordan",
     photo: jordan3,
-    social: (
-      <a href="https://www.instagram.com/mr_theatrics/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "PORTRAIT"
   },
 
   {
-    name: "Ashton",
     photo: ashton,
-    social: (
-      <a href="https://www.instagram.com/adtglobal_/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "PORTRAIT"
   },
   
   {
-    name: "Zenobia",
     photo: zenobia2,
-    social: (
-      <a href="https://www.instagram.com/awesomely.weird/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "BOUDOIR"
   },
   
@@ -351,23 +258,14 @@ export const photoshoots = [
     category: "BOUDOIR"
   },
 
- 
-
   {
     photo: zenobia3,
     category: "BOUDOIR"
   },
 
-
   {
-    name: "Zianna",
     photo: zianna,
     category: "BOUDOIR",
-    social: (
-      <a href="https://www.instagram.com/zianna.ish/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
   },
 
   {
@@ -376,13 +274,7 @@ export const photoshoots = [
   },
 
   {
-    name: "Abigael",
     photo: abigale,
-    social: (
-      <a href="https://www.instagram.com/abi.gael__/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "BOUDOIR"
   },
 
@@ -397,79 +289,37 @@ export const photoshoots = [
   },
   
   {
-    name: "Jace",
     photo: jace,
-    social: (
-      <a href="https://www.instagram.com/iamjacep/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Eddie",
     photo: edward,
-    social: (
-      <a href="https://www.instagram.com/_eddieestrada/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Devonte",
     photo: devonte,
-    social: (
-      <a href="https://www.instagram.com/doseofdevy/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE",
   },
 
   {
-    name: "Gavin",
     photo: gavin,
-    social: (
-      <a href="https://www.instagram.com/marks_arc/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Jaylen",
     photo: jaylen,
-    social: (
-      <a href="https://www.instagram.com/jlen_da_r3alest/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Nacier",
     photo: nacier,
-    social: (
-      <a href="https://www.instagram.com/bboynasty/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Jordan",
     photo: jordan2,
-    social: (
-      <a href="https://www.instagram.com/mr_theatrics/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
@@ -479,30 +329,17 @@ export const photoshoots = [
   },
 
   {
-    name: "Jorden",
     photo: jorden,
-    social: (
-      <a href="https://www.instagram.com/reignsaenz/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
   {
-    name: "Cesar",
     photo: cesar,
     category: "LIFESTYLE"
   },
 
   {
-    name: "Caston",
     photo: caston,
-    social: (
-      <a href="https://www.instagram.com/boydcast/" target="_blank" rel="noopener noreferrer">
-        <AiFillInstagram />
-      </a>
-    ),
     category: "LIFESTYLE"
   },
 
@@ -628,15 +465,15 @@ export const requirements = [
   {
     id: 1,
     icon: <IoTimerOutline />,
-    text: "Time Management",
-    amount: "Photoshoots are a minimum of 2hrs",
+    text: "TIME MANAGEMENT",
+    amount: "",
     tab: "PLEASE BE ON TIME!",
   },
   {
     id: 2,
     icon: <MdLocalAtm />,
-    text: "Deposit",
+    text: "DEPOSIT",
     amount:
-      "Half payment before shoot & the other half after shoot or Full payment with ZELLE and or CASH",
+      "ZELLE OR CASH",
   },
 ];

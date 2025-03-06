@@ -9,23 +9,11 @@ import Footer from "./components/Footer";
 
 const App = () => {
   const [pics, setPics] = useState([]);
-  // const [touchStartX, setTouchStartX] = useState(0); // Track touch start X position
-  // const [touchEndX, setTouchEndX] = useState(0); // Track touch end X position
   const [selectedCategory, setSelectedCategory] = useState(null); // New state to track selected category
 
   useEffect(() => {
     setPics(photoshoots); // Set the photoshoot data
   }, []);
-
-  // useEffect(() => {
-  //   if (selectedPic !== null) {
-  //     // Disable scrolling when modal is open
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     // Re-enable scrolling when modal is closed
-  //     document.body.style.overflow = "auto";
-  //   }
-  // }, [selectedPic]);
 
   const handleCategoryClick = (category) => {
     const filteredPics = photoshoots.filter((pic) => pic.category === category);
@@ -38,42 +26,8 @@ const App = () => {
     setSelectedCategory(null); // Reset category selection
   };
 
-  // const showPrevious = () => {
-  //   if (selectedPic > 0) {
-  //     setSelectedPic(selectedPic - 1); // Show the previous image
-  //   }
-  // };
-
-  // const showNext = () => {
-  //   if (selectedPic < pics.length - 1) {
-  //     setSelectedPic(selectedPic + 1); // Show the next image
-  //   }
-  // };
-
-  // // Handle touch start
-  // const handleTouchStart = (e) => {
-  //   setTouchStartX(e.touches[0].clientX); // Record the starting X position of the touch
-  // };
-
-  // // Handle touch move
-  // const handleTouchMove = (e) => {
-  //   setTouchEndX(e.touches[0].clientX); // Continuously track the X position of the touch
-  // };
-
-  // // Handle touch end (when the user lifts their finger)
-  // const handleTouchEnd = () => {
-  //   // Detect swipe direction
-  //   if (touchStartX - touchEndX > 50) {
-  //     // Swipe left (show next image)
-  //     showNext();
-  //   } else if (touchEndX - touchStartX > 50) {
-  //     // Swipe right (show previous image)
-  //     showPrevious();
-  //   }
-  // };
-
   return (
-    <div className="bg-gradient-to-r from-gray-800 to-gray-500">
+    <div className="bg-gradient-to-r from-gray-700 to-gray-900">
       <div className="container mx-auto">
         <Header />
         <Profilepic />
@@ -102,7 +56,7 @@ const App = () => {
         {selectedCategory && (
           <div className="text-center mt-4 py-4">
             <button
-              className="bg-gradient-to-r from-indigo-500 text-white px-4 py-2 rounded font-semibold"
+              className="bg-gradient-to-r from-gray-500 text-white px-4 py-2 rounded font-semibold"
               onClick={resetCategory}
             >
               Back to Categories
@@ -112,7 +66,7 @@ const App = () => {
 
         {/* Display images in a grid */}
         {selectedCategory && (
-          <div className="grid grid-cols-3 gap-4 py-5">
+          <div className="flex flex-col justify-center items-center space-y-1">
             {pics.map((picture) => (
               <Photography
                 key={picture.photo}
@@ -122,12 +76,11 @@ const App = () => {
             
           </div>
         )}
-        
 
         {selectedCategory && (
           <div className="text-center mt-4 py-2">
             <button
-              className="bg-gradient-to-r from-indigo-500 text-white px-4 py-2 rounded font-semibold"
+              className="bg-gradient-to-r from-gray-500 text-white px-4 py-2 rounded font-semibold"
               onClick={resetCategory}
             >
               Back to Categories
@@ -138,9 +91,7 @@ const App = () => {
         {/* <Prices /> */}
         <Requirements />
       </div>
-
       <Footer />
-
     </div>
   );
 };

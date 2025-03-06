@@ -20,7 +20,7 @@ const Header = () => {
             <span className="text-white mr-2">I am a</span>
             <TypeAnimation
               sequence={[
-                "Creator",
+                "Digital Creator",
                 2000,
                 "Photographer",
                 2000,
