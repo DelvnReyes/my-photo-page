@@ -34,7 +34,7 @@ const Header = () => {
             />
             <div className="flex items-center justify-center text-white">
               <a
-                href="https://www.instagram.com/DelvnReyes/"
+                href="https://www.instagram.com/Konfdent/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
