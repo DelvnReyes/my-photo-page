@@ -33,13 +33,13 @@ const Header = () => {
               repeat={Infinity}
             />
             <div className="flex items-center justify-center text-white">
-              {/* <a
-                href="https://www.instagram.com/Konfdent/"
+              <a
+                href="https://www.instagram.com/Zomo1kon/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
-              </a> */}
+              </a>
 
               <a
                 href="https://twitter.com/K1ngKulture"
