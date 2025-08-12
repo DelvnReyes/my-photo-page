@@ -42,7 +42,7 @@ const Header = () => {
               </a>
 
               <a
-                href="https://twitter.com/K1ngKulture"
+                href="https://twitter.com/Zomo1kon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
